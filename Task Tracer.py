@@ -16,7 +16,6 @@ btn2_txt = 'Queries'
 list_path = 'Empty'
 
 global ct
-
 ct = pd.DataFrame(columns = ['task'])
 
 class MainWindow(QMainWindow):
@@ -26,9 +25,6 @@ class MainWindow(QMainWindow):
         super(MainWindow, self).__init__()
         global list_path
         global deleteStack
-        #global ct
-
-        #ct = pd.DataFrame(columns = ['task'])
         
         #deleteStack = pd.DataFrame()#(columns = ['loc','text'])
         deleteStack = pd.DataFrame(columns = ['loc','text'])
