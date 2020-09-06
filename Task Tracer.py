@@ -304,17 +304,6 @@ class MainWindow(QMainWindow):
             f.write(json.dumps(my_items))
         return()
 
-##    def save_comp_task(self):
-##        items = []
-##        my_items=[]
-##        
-##        for index in range(self.listwidget.count()):
-##            items.append(self.listwidget.item(index))
-##            my_items.append(self.listwidget.item(index).text())
-##
-##        with open(list_path, "w") as f:
-##            f.write(json.dumps(my_items))
-##        return()
 
     def load_file(self):
         global list_path
