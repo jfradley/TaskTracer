@@ -16,7 +16,6 @@ btn2_txt = 'Queries'
 list_path = 'Empty'
 
 global ct
-
 ct = pd.DataFrame(columns = ['task'])
 
 class MainWindow(QMainWindow):
@@ -26,9 +25,6 @@ class MainWindow(QMainWindow):
         super(MainWindow, self).__init__()
         global list_path
         global deleteStack
-        #global ct
-
-        #ct = pd.DataFrame(columns = ['task'])
         
         #deleteStack = pd.DataFrame()#(columns = ['loc','text'])
         deleteStack = pd.DataFrame(columns = ['loc','text'])
@@ -308,17 +304,6 @@ class MainWindow(QMainWindow):
             f.write(json.dumps(my_items))
         return()
 
-##    def save_comp_task(self):
-##        items = []
-##        my_items=[]
-##        
-##        for index in range(self.listwidget.count()):
-##            items.append(self.listwidget.item(index))
-##            my_items.append(self.listwidget.item(index).text())
-##
-##        with open(list_path, "w") as f:
-##            f.write(json.dumps(my_items))
-##        return()
 
     def load_file(self):
         global list_path
