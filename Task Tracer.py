@@ -304,7 +304,6 @@ class MainWindow(QMainWindow):
             f.write(json.dumps(my_items))
         return()
 
-
     def load_file(self):
         global list_path
         global ct
